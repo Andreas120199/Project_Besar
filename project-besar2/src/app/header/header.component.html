@@ -1,0 +1,16 @@
+<div>
+  <mat-toolbar>  
+    <mat-toolbar>
+      <span><a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active">Home</a></span>
+      <span><a class="nav-link" [routerLink]="['/about']" routerLinkActive="active">About</a></span>
+    </mat-toolbar>
+    
+    
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">dehaze</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+</mat-toolbar>
+</div>
